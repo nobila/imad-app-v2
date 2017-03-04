@@ -1,15 +1,15 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+//var Pool = require('pg').Pool;
 
-var config = {
+/*var config = {
   host: 'db.imad.hasura.io',
   user: 'nobila',
   password: process.env.DB_PASSWORD,
   database: 'nobila',
   port:'5432',
-};
+};*/
 var pool = new Pool(config);
 app.get('/test-db',function(req,res)
 {// make a select request
