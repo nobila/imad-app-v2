@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+//var Pool = require('pg').Pool;
 
 /*var config = {
   host: 'db.imad.hasura.io',
@@ -10,11 +10,11 @@ var Pool = require('pg').Pool;
   database: 'nobila',
   port:'5432',
 };*/
-var pool = new Pool(config);
-app.get('/test-db',function(req,res)
-{// make a select request
+//var pool = new Pool(config);
+//app.get('/test-db',function(req,res)
+
 //return a response with the results
-pool.query('SELECT * FROM test', function(err,result)
+/*pool.query('SELECT * FROM test', function(err,result)
 {
     if(err)
     {
@@ -30,7 +30,7 @@ pool.query('SELECT * FROM test', function(err,result)
     
 });
     
-});
+});*/
 
 var app = express();
 app.use(morgan('combined'));
